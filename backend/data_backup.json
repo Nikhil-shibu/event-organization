@@ -1,0 +1,562 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 6,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 6,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 6,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 6,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add event",
+    "content_type": 7,
+    "codename": "add_event"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change event",
+    "content_type": 7,
+    "codename": "change_event"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete event",
+    "content_type": 7,
+    "codename": "delete_event"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view event",
+    "content_type": 7,
+    "codename": "view_event"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add event participation",
+    "content_type": 8,
+    "codename": "add_eventparticipation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change event participation",
+    "content_type": 8,
+    "codename": "change_eventparticipation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete event participation",
+    "content_type": 8,
+    "codename": "delete_eventparticipation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view event participation",
+    "content_type": 8,
+    "codename": "view_eventparticipation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "accounts",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "events",
+    "model": "event"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "events",
+    "model": "eventparticipation"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "juvbidt3y390d2d8kgqc7i88xdzrn0a5",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-xD9Kes5g7XptHEC2FCcV4u4QKQW0b2bei0XY1hq3kZc4EzszyU6_G0J65LYDukO7dZ56W5cZ-a7wgw5-7ZSfl8P9O6gw6rd2Mhgk9MV6FYIWIBB8mbwzwigvp2QB0INGR8UhKGcTKYKC2gRKsrD3B9x4OGY:1ufb6H:bFRx2RKNtOBKJZAhvf4VPMJo4QTAN78429jNYLLlgak",
+    "expire_date": "2025-08-09T09:21:53.161Z"
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$3nfvqVzhmOdL0hv6pBdJyk$2kA/HqFhHiPc9Sg1O6Xkc4F/KetPxDUR+dOq/L5NyCI=",
+    "last_login": "2025-07-26T09:21:53.149Z",
+    "is_superuser": true,
+    "username": "admin",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-07-26T09:20:11.528Z",
+    "user_type": "admin",
+    "student_id": null,
+    "first_name": "admin",
+    "last_name": "admin",
+    "email": "admin@example.com",
+    "created_at": "2025-07-26T09:20:11.840Z",
+    "updated_at": "2025-07-26T09:20:58.244Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$AvMBEWpUyd923FVEuJPSri$nNhdkPYyXFKUke4GRNkTg9B0P7JVaGT89RC9MG0TIks=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "john.doe@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-26T09:27:05.757Z",
+    "user_type": "student",
+    "student_id": "STU001",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "created_at": "2025-07-26T09:27:06.117Z",
+    "updated_at": "2025-07-26T09:27:06.117Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$6IsAKXESoO14tSQU1Ioi1r$KdVnTB3MNSARvYFA3OZtrB6N+bXsfb/WsO6Q7MfLfJA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "jane.smith@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-26T09:27:06.131Z",
+    "user_type": "student",
+    "student_id": "STU002",
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "jane.smith@example.com",
+    "created_at": "2025-07-26T09:27:06.528Z",
+    "updated_at": "2025-07-26T09:27:06.528Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$xwOkYyg261qiQqE5dyI8sD$0duLKbSVeCHBQQXyO+9+YtIQjyJc3ng/Y4B3Au6G+Gg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mike.johnson@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-26T09:27:06.545Z",
+    "user_type": "student",
+    "student_id": "STU003",
+    "first_name": "Mike",
+    "last_name": "Johnson",
+    "email": "mike.johnson@example.com",
+    "created_at": "2025-07-26T09:27:06.904Z",
+    "updated_at": "2025-07-26T09:27:06.904Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$kNb8UACU1SssBZQnuvLBRF$Ct9IhFpVFe5fzlFA5pE+lYBdZPxFSfHoeoZ0Aq9XzGw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "abc@abce.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-26T09:33:25.119Z",
+    "user_type": "student",
+    "student_id": "974965634",
+    "first_name": "firj",
+    "last_name": "efldw",
+    "email": "abc@abce.com",
+    "created_at": "2025-07-26T09:33:25.588Z",
+    "updated_at": "2025-07-26T09:33:25.588Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "events.event",
+  "pk": 1,
+  "fields": {
+    "title": "Spring Fashion Show",
+    "description": "Showcase the latest spring collection with beautiful models and designs. Join us for an evening of glamour and style!",
+    "date": "2025-08-02",
+    "time": "18:00:00",
+    "location": "Main Auditorium",
+    "max_participants": 200,
+    "current_participants": 156,
+    "category": "Fashion",
+    "status": "upcoming",
+    "created_by": 1,
+    "created_at": "2025-07-26T09:27:06.919Z",
+    "updated_at": "2025-07-26T09:27:06.919Z"
+  }
+},
+{
+  "model": "events.event",
+  "pk": 2,
+  "fields": {
+    "title": "Wellness Workshop",
+    "description": "Learn about self-care, meditation, and wellness practices. Discover techniques for a balanced and healthy lifestyle.",
+    "date": "2025-08-09",
+    "time": "14:00:00",
+    "location": "Wellness Center",
+    "max_participants": 50,
+    "current_participants": 42,
+    "category": "Wellness",
+    "status": "upcoming",
+    "created_by": 1,
+    "created_at": "2025-07-26T09:27:06.931Z",
+    "updated_at": "2025-07-26T09:27:06.931Z"
+  }
+},
+{
+  "model": "events.event",
+  "pk": 3,
+  "fields": {
+    "title": "Tech Innovation Summit",
+    "description": "Explore the latest trends in technology and innovation. Network with industry leaders and tech enthusiasts.",
+    "date": "2025-08-16",
+    "time": "09:00:00",
+    "location": "Tech Hub",
+    "max_participants": 150,
+    "current_participants": 87,
+    "category": "Technology",
+    "status": "upcoming",
+    "created_by": 1,
+    "created_at": "2025-07-26T09:27:06.944Z",
+    "updated_at": "2025-07-26T09:27:06.944Z"
+  }
+},
+{
+  "model": "events.event",
+  "pk": 4,
+  "fields": {
+    "title": "Art & Craft Fair",
+    "description": "Display and sell handmade crafts and artwork. A celebration of creativity and artistic expression.",
+    "date": "2025-06-26",
+    "time": "10:00:00",
+    "location": "Art Gallery",
+    "max_participants": 100,
+    "current_participants": 89,
+    "category": "Arts",
+    "status": "past",
+    "created_by": 1,
+    "created_at": "2025-07-26T09:27:06.955Z",
+    "updated_at": "2025-07-26T09:27:06.955Z"
+  }
+},
+{
+  "model": "events.event",
+  "pk": 5,
+  "fields": {
+    "title": "Music Concert Night",
+    "description": "An evening of beautiful music performances by talented students and guest artists.",
+    "date": "2025-06-11",
+    "time": "19:00:00",
+    "location": "Concert Hall",
+    "max_participants": 300,
+    "current_participants": 287,
+    "category": "Music",
+    "status": "past",
+    "created_by": 1,
+    "created_at": "2025-07-26T09:27:06.969Z",
+    "updated_at": "2025-07-26T09:27:06.969Z"
+  }
+}
+]
