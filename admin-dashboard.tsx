@@ -59,7 +59,7 @@ export default function Component() {
   const fetchEvents = async () => {
     try {
       setLoading(true)
-      const response = await eventsAPI.getEvents(activeTab === 'upcoming' ? 'upcoming' : 'past')
+      const response = await eventsAPI.getEvents()
       setEvents(response.data)
     } catch (error) {
       console.error('Error fetching events:', error)
@@ -74,9 +74,17 @@ export default function Component() {
     router.push('/')
   }
 
-  const filteredEvents = events.filter(
-    (event) => event.status === activeTab && event.title.toLowerCase().includes(searchTerm.toLowerCase()),
-  )
+  const filteredEvents = events.filter((event) => {
+    const matchesSearch = event.title.toLowerCase().includes(searchTerm.toLowerCase())
+    
+    if (activeTab === 'upcoming') {
+      // Show upcoming and ongoing events for admins
+      return (event.status === 'upcoming' || event.status === 'ongoing') && matchesSearch
+    } else {
+      // Show past events
+      return event.status === 'past' && matchesSearch
+    }
+  })
 
   const handleCreateEvent = async () => {
     if (newEvent.title && newEvent.date && newEvent.time) {
@@ -212,7 +220,7 @@ export default function Component() {
                 <div>
                   <p className="text-sm text-gray-600">Upcoming Events</p>
                   <p className="text-3xl font-bold text-purple-600">
-                    {events.filter((e) => e.status === "upcoming").length}
+                    {events.filter((e) => e.status === "upcoming" || e.status === "ongoing").length}
                   </p>
                 </div>
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">

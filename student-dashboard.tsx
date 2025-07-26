@@ -48,11 +48,10 @@ export default function Component() {
   const fetchEvents = async () => {
     try {
       setLoading(true)
-      const status = activeTab === 'ongoing' ? 'upcoming' : 'past'
-      const response = await eventsAPI.getEvents(status)
+      const response = await eventsAPI.getStudentEvents()
       setEvents(response.data.map((event: any) => ({
         ...event,
-        userStatus: getUserParticipationStatus(event.id)
+        userStatus: event.user_participation_status || 'pending'
       })))
     } catch (error) {
       console.error('Error fetching events:', error)
@@ -81,9 +80,17 @@ export default function Component() {
     router.push('/')
   }
 
-  const filteredEvents = events.filter(
-    (event) => event.status === activeTab && event.title.toLowerCase().includes(searchTerm.toLowerCase()),
-  )
+  const filteredEvents = events.filter((event) => {
+    const matchesSearch = event.title.toLowerCase().includes(searchTerm.toLowerCase())
+    
+    if (activeTab === 'ongoing') {
+      // Show upcoming and ongoing events
+      return (event.status === 'upcoming' || event.status === 'ongoing') && matchesSearch
+    } else {
+      // Show past events
+      return event.status === 'past' && matchesSearch
+    }
+  })
 
   const handleParticipation = async (eventId: number, status: "joined" | "skipped") => {
     try {
@@ -186,7 +193,7 @@ export default function Component() {
                 <div>
                   <p className="text-sm text-gray-600">Ongoing Events</p>
                   <p className="text-3xl font-bold text-purple-600">
-                    {events.filter((e) => e.status === "ongoing").length}
+                    {events.filter((e) => e.status === "upcoming" || e.status === "ongoing").length}
                   </p>
                 </div>
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">

@@ -79,6 +79,10 @@ export const eventsAPI = {
     return api.get('/events/', { params });
   },
   
+  getStudentEvents: () => {
+    return api.get('/events/student/');
+  },
+  
   createEvent: (eventData: {
     title: string;
     description: string;
